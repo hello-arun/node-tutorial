@@ -1,10 +1,15 @@
 const express = require("express");
+const path = require("path");
 const app = express();
+
+// __dirname : Where app.js is
+app.use("/public", express.static(path.join(__dirname)));
 const PORT = 3000; // Port to listen from
 
 // Home route
 app.get("/", (req, res) => {
-    res.send("Hello Express");
+    // res.send("Hello Express");
+    res.sendFile(path.join(__dirname,'static','index.html'))
 });
 
 // Another route
@@ -14,8 +19,8 @@ app.get("/example", (req, res) => {
 
 // Get data from webpage and send back the same
 app.get("/example/:name/:age", (req, res) => {
-    console.log(req.params)
-    console.log(req.query)
+    console.log(req.params);
+    console.log(req.query);
     res.send(`Name: ${req.params.name}, age: ${req.params.age}`);
 });
 
