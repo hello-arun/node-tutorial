@@ -26,10 +26,12 @@ A file that hold metadata for project. To create this file use
 ```
 npm init
 
+# or to skip prompts
+npm init --yes
 # it will ask for various promt, just answer those.
 ```
 
-## Installing external packages
+## Installing/uninstalling external packages
 
 Package is a resuable code that can be included in out project. You can download varioud packages on https://www.npmjs.com/ . Just search the package over there. For example to install lodash
 
@@ -37,6 +39,24 @@ Package is a resuable code that can be included in out project. You can download
 npm i lodash
 # or
 npm install lodash
+# to uninstall
+npm uninstall lodash
 ```
 
-When you install a package the dependency is appended to the package.json file.
+When you install/uninstall a package the dependencies are updated in the package.json and package-lock.json files.
+
+## Package version
+
+Package have following version naming scenerio `major.minor.patch` 
+
+* patch : Some bug fixes  
+* minor : Minor update, add new functionality and might * depricate some old functionalities
+* major : Major update pushed out. Some breakable changes
+
+```node
+^major.minor.patch => major.x.x  // Update minor and patch to latest 
+
+~major.minor.patch => major.minor.x  // only update patch
+
+major.minor.patch => major.minor.patch // Strictly use specified version
+```
