@@ -25,10 +25,10 @@ A file that hold metadata for project. To create this file use
 
 ```
 npm init
-
-# or to skip prompts
-npm init --yes
 # it will ask for various promt, just answer those.
+
+# to skip prompts
+npm init --yes
 ```
 
 ## Installing/uninstalling external packages
@@ -60,3 +60,11 @@ Package have following version naming scenerio `major.minor.patch`
 
 major.minor.patch => major.minor.patch // Strictly use specified version
 ```
+
+
+
+
+
+## Ref
+
+* https://youtu.be/RLtyhwFtXQA
