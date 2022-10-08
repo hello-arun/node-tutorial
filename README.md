@@ -29,3 +29,14 @@ npm init
 # it will ask for various promt, just answer those.
 ```
 
+## Installing external packages
+
+Package is a resuable code that can be included in out project. You can download varioud packages on https://www.npmjs.com/ . Just search the package over there. For example to install lodash
+
+```bash
+npm i lodash
+# or
+npm install lodash
+```
+
+When you install a package the dependency is appended to the package.json file.
