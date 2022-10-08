@@ -19,3 +19,13 @@ After installing node you can run any file via
 node filename.js
 ```
 
+## Package.json
+
+A file that hold metadata for project. To create this file use 
+
+```
+npm init
+
+# it will ask for various promt, just answer those.
+```
+
