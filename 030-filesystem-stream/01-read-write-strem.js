@@ -8,3 +8,6 @@ readStream.on("data", (chunk) => {
     console.log(chunk);
     writeStream.write(chunk);
 });
+
+// The above task can more easily be done using pipes.
+// read more in 02-pipe.js
