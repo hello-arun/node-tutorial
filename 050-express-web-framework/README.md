@@ -8,7 +8,7 @@ A web framework for node.js
 npm init --yes
 npn install express
 # When everything setup
-npn app
+npm app
 ```
 
 ## Route vs Query String params
