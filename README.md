@@ -42,8 +42,15 @@ npm install lodash
 # to uninstall
 npm uninstall lodash
 ```
-
 When you install/uninstall a package the dependencies are updated in the package.json and package-lock.json files.
+
+To install dependencies from the package.json as
+```bash
+cd PROJECT_DIR # You must cd to the same dir where package.json is
+npm install 
+# This will automatically setup dev env for you
+```
+
 
 ## Package version
 
